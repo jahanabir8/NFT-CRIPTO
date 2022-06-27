@@ -6,6 +6,7 @@
     --p--white: #fff;
     --p--pColor: #A6ACB8;
     --p--boxColor: #1D263B;
+    --p--boxShadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
 }
 
 *{
@@ -298,7 +299,7 @@ a{
     background-color: var(--p--boxColor);
     border-radius: 24px;
     height: 457px;
-    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
+    box-shadow: var(--p--boxShadow);
 }
 
 .box__model h6 {
@@ -658,7 +659,7 @@ section.accordion-item p {
     background-color: var(--p--boxColor);
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
+    box-shadow: var(--p--boxShadow)
 }
 
 .card__padel:last-child{
@@ -816,7 +817,7 @@ table tr th{
     font-family: 'Outfit';
     background-color: var(--p--boxColor);
     border-radius: 20px;
-    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
+    box-shadow: var(--p--boxShadow)
 }
 
 .team__member h5 {
