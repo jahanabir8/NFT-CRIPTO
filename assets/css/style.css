@@ -298,6 +298,7 @@ a{
     background-color: var(--p--boxColor);
     border-radius: 24px;
     height: 457px;
+    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
 }
 
 .box__model h6 {
@@ -384,7 +385,6 @@ a{
     padding: 0;
     margin: 0 auto;
     width: 85%;
-    /* font-family: "PT Sans" sans-serif */
 }
 
 .accordion .accordion-item {
@@ -655,9 +655,10 @@ section.accordion-item p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1C263A;
+    background-color: var(--p--boxColor);
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
 }
 
 .card__padel:last-child{
@@ -693,7 +694,7 @@ section.accordion-item p {
 }
 
 .card__part .para__part .text h4 {
-    color: #fff;
+    color: var(--p--white);
     font-size: 26px;
     margin-bottom: 12px;
     margin: 20px 0 12px;
@@ -725,20 +726,22 @@ section.accordion-item p {
 
 .counting__list {
     padding: 49px 60px;
-    background-color: #1C263A;
+    background-color: var(--p--boxColor);
     border-radius: 10px;
+    /* display: none; */
 }
 
-table{
+.counting__list table{
     width: 100%;
     font-family: 'Poppins';
 }
-    th , td{
+
+.counting__list table th ,
+ .counting__list table td{
     border-color: inherit;
     border-style: solid;
     border-width: 0;
     padding: 20px 0;
-    /* border-bottom: 1px solid var(--p--pColor); */
     color: var(--p--pColor);
 }
 
@@ -746,7 +749,7 @@ tr{
     border-bottom: 1px solid var(--p--pColor);
 }
 
-tr:last-child{
+.counting__list tr:last-child, .counting__list tr:first-child{
     border-bottom: none;
 }
 
@@ -755,7 +758,7 @@ th{
 }
 
 table tr th{
-    color: var(--p--white);
+    color: var(--p--white) !important;
     font-size: 20px;
     font-weight: 500;
 }
@@ -766,4 +769,202 @@ table tr th{
     }
 }
 
+@media screen and (max-width: 575px) {
+    .counting__list {
+        padding: 20px;
+    }
+
+    .counting__list th{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .counting__list table th , td{
+        padding: 15px 0;
+    }
+
+    .counting__list table tr td{
+        font-size: 10px;
+    }
+
+    .counting__list table tr td img{ 
+        display: none;
+    }
+}
+
 /* =====analysis section end here===== */
+
+
+/* =====roadmap section start here===== */
+.roadmap__section{
+    padding: 200px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .roadmap__section {
+        padding: 122px 0;
+    }
+}
+/* =====roadmap section end here===== */
+
+
+/* =====team member section start here===== */
+.team__member {
+    padding: 45px;
+    text-align: center;
+    font-family: 'Outfit';
+    background-color: var(--p--boxColor);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px -2px rgb(1 1 1 / 5%);
+}
+
+.team__member h5 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--p--white);
+    margin: 30px 0 20px;
+}
+
+.team__member span {
+    color: var(--p--pColor);
+    font-size: 18px;
+}
+
+/* ---swiper--- */
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+  }
+/* ---swiper--- */
+/* =====team member section end here===== */
+
+
+/* =====review section start here===== */
+.review__section {
+    margin: 200px 0 0;
+    padding: 132px 0 200px;
+    background-image: url(../image/bg/review__bd.png);
+
+}
+
+@media screen and (max-width: 767px) {
+    .review__section{
+        padding: 120px 0;
+    }
+}
+/* =====review section end hrere===== */
+
+
+/* =====FAQ section start here===== */
+.FAQ__section{
+    background-image: url(../image/bg/FAQ__bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 146px;
+}
+
+.FAQ__image img {
+    width: 100%;
+}
+
+/* ----accordion----- */
+
+.FAQ__accordion .content__box{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.FAQ__accordion .content__box .label{
+    position: relative;
+    padding: 18px 73px;
+    background: var(--p--boxColor);
+    color: var(--p--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* .FAQ__accordion .content__box .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translateY(-50%);
+    font-size: 24px;
+} */
+
+/* .FAQ__accordion .content__box.active .label::before{
+    content: '-';
+} */
+
+.FAQ__accordion .content__box .label h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.FAQ__accordion .content__box .label span {
+    height: 37px;
+    width: 37px;
+    line-height: 37px;
+    text-align: center;
+    background-color: var(--p--card);
+    display: block;
+}
+
+.FAQ__accordion .content__box .content{
+    position: relative;
+    background-color: var(--p--boxColor);
+    height: 0;
+    overflow: hidden;
+    color: var(--p--pColor);
+    transition: 0.5s;
+}
+
+.FAQ__accordion .content__box.active .content p{
+    text-align: justify;
+    margin: 0;
+}
+
+.FAQ__accordion .content__box.active .content{
+    height: 100px;
+    padding: 0 20px 20px;
+}
+
+/* ------------- */
+
+@media screen and (max-width: 767px) {
+    .FAQ__section{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .FAQ__accordion .content__box .label{
+        padding: 18px;
+    }
+}
+
+
+/* =====FAQ section end here===== */

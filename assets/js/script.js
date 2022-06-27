@@ -43,3 +43,11 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+
+// FAQ accordion
+const FAQ__accordion = document.getElementsByClassName('content__box');
+for(var i = 0; i<FAQ__accordion.length; i++){
+    FAQ__accordion[i].addEventListener('click', function(){
+        this.classList.toggle('active')
+    })
+}
