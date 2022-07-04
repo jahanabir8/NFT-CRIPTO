@@ -1226,7 +1226,7 @@ table tr th{
 
 @media screen and (max-width: 767px) {
     .FAQ__section{
-        padding: 0;
+        padding: 100px 0 0  0;
     }
 }
 
@@ -1416,84 +1416,148 @@ ul.foot__list li a {
 
 .slick-slide img {
     display: block;
-    width: 311px !important;
+    width: 344px !important;
     transition: .4s;
 }
 .client__img.slick-slide.slick-current.slick-active img {
     transform: scale(1.5);
 }
-/* .slick-slider .slick-track, */
- .slick-slider .slick-list
- {
-    /* height: 50rem !important; */
-    padding-top: 93px !important;
 
-}
-.slick-initialized .slick-slide {
-    display: block;
-    /* padding-left: 150px !important; */
-}
-.client__comment {
-    position: relative;
-    background: #fff;
-    left: 0;
-    top: 50%;
-    width: 500px;
-    padding: 45px;
-    border-radius: 10px;
-    z-index: 9999;
-}
 
-button.slick-prev.slick-arrow , button.slick-next.slick-arrow{
-    display: none !important;
-}
 
-.your-class1.slick-initialized.slick-slider {
-    position: absolute;
-    /* max-width: 544px; */
-}
 
-.client__comment.slick-slide{
-    font-family: var(--p--font1);
-    width: 544px !important;
-    height: 361px;
-    background-color: var(--p--boxColor);
-    /* padding: 0; */
-}
 
-.client__comment.slick-slide p {
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--p--pColor);
-    font-weight: 500;
-}
 
-.client__comment.slick-slide.slick-current.slick-active h4 {
-    font-size: 24px;
-    margin: 30px 0 5px;
-    color: #fff;
-}
-
-.client__comment.slick-slide.slick-current.slick-active span {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: var(--p--pColor);
-}
-
-.client__comment.slick-slide.slick-current.slick-active svg.svg-inline--fa.fa-star {
-    color: var(--p--card);
-    margin-right: 10px;
-}
-
-.your-class1 .slick-track {
-    width: 544px !important;
-    height: 361px !important;
-}
-
-@media (min-width: 768px){
-.offset-md-4 {
-    margin-left: 43.333333%;
-}
-}
 /* ---mine--- */
+
+
+.slick__here {
+    position: relative;
+    font-family: var(--p--font1);
+}
+.left-comment-section {
+    position: absolute;
+    background: var(--p--boxColor);
+    max-width: 544px;
+    max-height: 354px;
+    padding: 45px;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 34%;
+    left: 19%;
+    transform: translate(-50%);
+    z-index: 9999 !important;
+}
+
+
+.your-class1 p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--p--pColor);
+}
+
+.your-class1 h4 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 30px 0 10px;
+}
+
+.your-class2 .slick-track {
+    padding: 126px 0;
+    padding-left: 90px;
+}
+
+.client__img.slick-slide.slick-active {
+    opacity: 0.7;
+}
+
+.client__img.slick-slide.slick-current.slick-active {
+    opacity: unset;
+}
+
+@media screen and (max-width: 1400px) {
+    .left-comment-section  {
+        max-width: 404px;
+        top: 24%;
+        left: 23%;
+    }
+
+    
+
+    .slick-slide img{
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .your-class2 .slick-track {
+        padding: 126px 0;
+        padding-left: 10px;
+    }
+
+    .client__img.slick-slide.slick-current.slick-active img {
+        transform: scale(1.05);
+    }
+
+    .slick-slide img {
+        width: 344px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .left-comment-section  {
+        top: 74%;
+        left: 54%;
+        max-width: 526px;
+    }
+
+    .client__comment.slick-slide.slick-current.slick-active {
+        width: 439px !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .client__img.slick-slide.slick-current.slick-active img {
+        transform: scale(1);
+    }
+    .client__img img {
+        width: 96% !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .left-comment-section {
+    max-width: 401px;
+    max-height: 281px;
+    }
+
+    .your-class1.slick-initialized.slick-slider p {
+        font-size: 13px;
+        line-height: 19px;
+        width: 313px;
+    }
+
+    .left-comment-section {
+        left: 50%;
+    }
+
+}
+
+@media screen and (max-width: 424px) {
+    .left-comment-section {
+        padding: 24px 14px;
+    }
+
+    .left-comment-section {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .your-class1.slick-initialized.slick-slider p {
+        width: 259px;
+    }
+}

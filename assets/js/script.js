@@ -51,13 +51,43 @@ $('.your-class1').slick({
     slidesToScroll: 1,
     margin:0,
     arrows: false,
+    asNavFor: '.your-class2',
+    focusOnSelect: true,
+
   });
   $('.your-class2').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     asNavFor: '.your-class1',
     dots: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    arrows:false,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 
