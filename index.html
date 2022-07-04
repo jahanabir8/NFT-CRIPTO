@@ -13,8 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Outfit:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
 
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -213,6 +214,17 @@
                 <div class="flow__title">
                     <h4>Tokenomics</h4>
                     <p>Consectetur in venenatis in turpis ultricies mauris a at facilisi.</p>
+                </div>
+                <div class="piechart">
+                    <!-- <div> -->
+                        <canvas id="myChart"></canvas>
+                    <!-- </div> -->
+                    <div class="pie__evaluate">
+                        <p><span>60%</span> <br> Community </p>
+                        <p><span>21.51%</span> <br> Team </p>
+                        <p><span>17.80%</span> <br> Investor </p>
+                        <p><span>0.69%</span> <br> Advisors </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -465,13 +477,89 @@
                     <h4>Roadmap</h4>
                     <p>Consectetur in venenatis in turpis ultricies mauris a at facilisi.</p>
                 </div>
-                <div class="map">
-                    <img src="assets/image/section/roadmap.png" alt="image">
+                <div class="map__draw">
+                    <div class="image__section first__child">
+                        <img src="assets/image/section/rmap1.png" alt="image">
+                        <div class="content">
+                            <span>JAN, 2022</span>
+                            <p>Development <br> Begins</p>
+                        </div>
+                    </div>
+                    <div class="image__section second__child">
+                        <img src="assets/image/section/rmap2.png" alt="image">
+                        <div class="content">
+                            <span>JAN, 2022</span>
+                            <p>Development <br> Begins</p>
+                        </div>
+                    </div>
+                    <div class="image__section third__child">
+                        <img src="assets/image/section/rmap3.png" alt="image">
+                        <div class="content">
+                            <span>JAN, 2022</span>
+                            <p>Development <br> Begins</p>
+                        </div>
+                    </div>
+                    <div class="image__section fourth__child">
+                        <img src="assets/image/section/rmap4.png" alt="image">
+                        <div class="content">
+                            <span>JAN, 2022</span>
+                            <p>Development <br> Begins</p>
+                        </div>
+                    </div>
+                    <div class="image__section fifth__child">
+                        <img src="assets/image/section/rmap5.png" alt="image">
+                        <div class="content">
+                            <span>JAN, 2022</span>
+                            <p>Development <br> Begins</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- roadmap section start here -->
+
+    <div class="rmap">
+        <div class="container">
+            <div class="rmap__inn">
+                <div class="image__section__rmap first__child">
+                    <img src="assets/image/section/rmap1.png" alt="image">
+                    <div class="content" style="color: rgba(0, 41, 189, 1);">
+                        <span>JAN, 2022</span>
+                        <p>Development <br> Begins</p>
+                    </div>
+                </div>
+                <div class="image__section__rmap second__child">
+                    <img src="assets/image/section/rmap2.png" alt="image">
+                    <div class="content"  style="color: rgba(0, 49, 222, 1);">
+                        <span>JAN, 2022</span>
+                        <p>Development <br> Begins</p>
+                    </div>
+                </div>
+                <div class="image__section__rmap third__child">
+                    <img src="assets/image/section/rmap3.png" alt="image">
+                    <div class="content" style="color: rgba(151, 174, 255, 1);">
+                        <span>JAN, 2022</span>
+                        <p>Development <br> Begins</p>
+                    </div>
+                </div>
+                <div class="image__section__rmap second__child">
+                    <img src="assets/image/section/rmap4.png" alt="image">
+                    <div class="content" style="color: rgba(189, 204, 255, 1);">
+                        <span>JAN, 2022</span>
+                        <p>Development <br> Begins</p>
+                    </div>
+                </div>
+                <div class="image__section__rmap third__child">
+                    <img src="assets/image/section/rmap5.png" alt="image">
+                    <div class="content" style="color: rgba(255, 255, 255, 1);">
+                        <span>JAN, 2022</span>
+                        <p>Development <br> Begins</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- team member section start here -->
@@ -483,7 +571,7 @@
                     <p>Elit tortor donec suscipit diam aliquam viverra. A faucibus viverra tincidunt rhoncus turpis arcu nec interdum urna. </p>
                 </div>
                 <div class="our__team">
-                    <div class="row gx-5">
+                    <div class="row gx-4 gx-lg-5">
                         <div class="col-md-6 col-lg-6 col-xl-4 mb-5">
                             <div class="team__member">
                                 <img src="assets/image/section/member1.png" alt="image">
@@ -542,8 +630,72 @@
                     <h4>What our Clients Say</h4>
                     <p>Pulvinar in eget mattis id justo ullamcorper. Lacus risus. </p>
                 </div>
-
-
+                <div class="slick__here">
+                    <div class="your-class1">
+                        <div class="client__comment">
+                            <p>Platea tempus ultrices duis quam. Nibh arcu felis amet,rhoncus.
+                                 Tortor et quam diam faucibus sem tristique inipsum. Pulvinar
+                                  faucibus dui suspendisse duis sed mattistincidunt mi sed.
+                            </p>
+                            <h4>Joseph Forsyth Hemmings</h4>
+                            <span>Australia</span> <br>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="client__comment">
+                            <p>Platea tempus ultrices duis quam. Nibh arcu felis amet,rhoncus.
+                                 Tortor et quam diam faucibus sem tristique inipsum. Pulvinar
+                                  faucibus dui suspendisse duis sed mattistincidunt mi sed.
+                            </p>
+                            <h4>Joseph Forsyth Hemmings</h4>
+                            <span>Australia</span> <br>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="client__comment">
+                            <p>Platea tempus ultrices duis quam. Nibh arcu felis amet,rhoncus.
+                                 Tortor et quam diam faucibus sem tristique inipsum. Pulvinar
+                                  faucibus dui suspendisse duis sed mattistincidunt mi sed.
+                            </p>
+                            <h4>Joseph Forsyth Hemmings</h4>
+                            <span>Australia</span> <br>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="client__comment">
+                            <p>Platea tempus ultrices duis quam. Nibh arcu felis amet,rhoncus.
+                                 Tortor et quam diam faucibus sem tristique inipsum. Pulvinar
+                                  faucibus dui suspendisse duis sed mattistincidunt mi sed.
+                            </p>
+                            <h4>Joseph Forsyth Hemmings</h4>
+                            <span>Australia</span> <br>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="client__comment">
+                            <p>Platea tempus ultrices duis quam. Nibh arcu felis amet,rhoncus.
+                                 Tortor et quam diam faucibus sem tristique inipsum. Pulvinar
+                                  faucibus dui suspendisse duis sed mattistincidunt mi sed.
+                            </p>
+                            <h4>Joseph Forsyth Hemmings</h4>
+                            <span>Australia</span> <br>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="offset-md-4 col-md-8">
+                        <div class="your-class2">
+                            <div class="client__img">
+                                <img src="assets/image/section/review1.png" alt="image">
+                            </div>
+                            <div class="client__img">
+                                <img src="assets/image/section/review1.png" alt="image">
+                            </div>
+                            <div class="client__img">
+                                <img src="assets/image/section/review1.png" alt="image">
+                            </div>
+                            <div class="client__img">
+                                <img src="assets/image/section/review1.png" alt="image">
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -628,17 +780,102 @@
         </div>
     </div>
     <!-- FAQ section end here -->
-    
+
+
+    <!-- invest section start here -->
+    <div class="invest__section">
+        <div class="container">
+            <div class="invest__inner">
+                <div class="invest__card">
+                    <div class="flow__title">
+                        <h4>Start Investing Today</h4>
+                        <p>Nunc fermentum amet, eu amet amet aenean. Viverra consectetur velit mattis ipsum risus consectetur elementum.</p>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Enter your e-mail">
+                        <a href="#">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- invest section end here -->
+
+
+    <!-- footer section start here -->
+    <div class="footer__section">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="foot__corn">
+                            <img src="assets/image/logo/logo1.png" alt="image">
+                            <p>Enim enim integer quam volutpat, a ut fames. Ornare sem egestas tincidunt vitae at nisi ultricies arcu.</p>
+                            <div class="button">
+                                <a class="button__btn footer" href="#">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="foot__list">
+                            <li class="head__one">Explore</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Why Coinio</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Roadmap</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="foot__list">
+                            <li class="head__one">Company</li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Blog </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="foot__list">
+                            <li class="head__one">Support</li>
+                            <li><a href="#">Getting started</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Server status</a></li>
+                            <li><a href="#">Report a bug</a></li>
+                            <li><a href="#">Chat support</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col-md-3">
+                        <div class="foot__corn">
+                            <p>We accept following payment systems</p>
+                            <div class="payment__system">
+                                <img src="assets/image/section/payment1.png" alt="image">
+                                <img src="assets/image/section/payment2.png" alt="image">
+                                <img src="assets/image/section/payment3.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end here -->
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/all.min.js"></script>
 
+
+
     <script src="assets/js/owl.carousel.min.js"></script>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
